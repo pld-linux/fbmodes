@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Base/Utilities
 Source0:	http://oktober.stc.cx/get/src/%{name}-%{version}.tar.bz2
+# Source0-md5:	0a066b01e88d076b95565f2d6e18cdea
 URL:		http://oktober.stc.cx/source/fbmodes.html
 BuildRequires:	autoconf
 BuildRequires:	automake
