@@ -60,11 +60,11 @@ Statyczna biblioteka argh
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{/usr/include/argh,%{_libdir}}
+install -d $RPM_BUILD_ROOT{%{_includedir}/argh,%{_libdir}}
 
 %{__make} install BINDIR=$RPM_BUILD_ROOT%{_bindir} \
 	LIBDIR=$RPM_BUILD_ROOT%{_libdir} \
-	INCDIR=$RPM_BUILD_ROOT/usr/include/argh
+	INCDIR=$RPM_BUILD_ROOT%{_includedir}/argh
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -81,7 +81,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n argh-devel
 %defattr(644,root,root,755)
-%attr(644,root,root) /usr/include/argh/*.h
+%attr(644,root,root) %{_includedir}/argh/*.h
 
 %files -n argh-static
 %defattr(644,root,root,755)
