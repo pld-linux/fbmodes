@@ -22,7 +22,7 @@ XFree86, SVGAlib oraz FrameBuffera.
 
 %package -n argh
 Summary:	argh library for fbmodes
-Summary(pl):	biblioteka argh dla fbmodes
+Summary(pl):	Biblioteka argh dla fbmodes
 Group:		Libraries
 
 %description -n argh
@@ -33,6 +33,7 @@ Biblioteka argh.
 
 %package -n argh-devel
 Summary:	argh library devel files
+Summary(pl):	Pliki nag³ówkowe argh
 Group:		Development/Libraries
 Requires:	argh = %{version}
 
@@ -40,7 +41,7 @@ Requires:	argh = %{version}
 Developement files for argh.
 
 %description -n argh-devel -l pl
-Pliki potrzebne do pisania programów przy u¿yciu argh.
+Pliki potrzebne do pisania programów korzystaj±cych z argh.
 
 %package -n argh-static
 Summary:	Static argh library
