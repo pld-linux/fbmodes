@@ -2,13 +2,14 @@ Summary:	XFree86/SVGAlib/FrameBuffer mode lines generator
 Summary(pl):	Generator trybów graficznych dla XFree86/SVGAlib/FrameBuffer
 Name:		fbmodes
 Version:	1.2.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Base/Utilities
 Source0:	http://oktober.stc.cx/get/src/%{name}-%{version}.tar.bz2
 URL:		http://oktober.stc.cx/source/fbmodes.html
 BuildRequires:	autoconf
 BuildRequires:	automake
+Requires:	argh = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,7 +34,7 @@ Biblioteka argh.
 %package -n argh-devel
 Summary:	argh library devel files
 Group:		Development/Libraries
-Requires:	argh
+Requires:	argh = %{version}
 
 %description -n argh-devel
 Developement files for argh.
@@ -45,12 +46,13 @@ Pliki potrzebne do pisania programów przy u¿yciu argh.
 Summary:	Static argh library
 Summary(pl):	Statyczna biblioteka argh
 Group:		Development/Libraries
+Requires:	argh-devel = %{version}
 
 %description -n argh-static
 Static argh library.
 
 %description -n argh-static -l pl
-Statyczna biblioteka argh
+Statyczna biblioteka argh.
 
 %prep
 %setup  -q
@@ -81,8 +83,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n argh-devel
 %defattr(644,root,root,755)
-%attr(644,root,root) %{_includedir}/argh/*.h
+%dir %{_includedir}/argh
+%{_includedir}/argh/*.h
 
 %files -n argh-static
 %defattr(644,root,root,755)
-%attr(644,root,root) %{_libdir}/*.a
+%{_libdir}/*.a
