@@ -27,7 +27,7 @@ Summary(pl):	Biblioteka argh dla fbmodes
 Group:		Libraries
 
 %description -n argh
-Library argh.
+argh library.
 
 %description -n argh -l pl
 Biblioteka argh.
@@ -39,7 +39,7 @@ Group:		Development/Libraries
 Requires:	argh = %{version}
 
 %description -n argh-devel
-Developement files for argh.
+Developement files for argh library.
 
 %description -n argh-devel -l pl
 Pliki potrzebne do pisania programów korzystaj±cych z argh.
@@ -60,13 +60,15 @@ Statyczna biblioteka argh.
 %setup  -q
 
 %build
-%{__make} OPTIM="%{rpmcflags} -ffast-math"
+%{__make} \
+	OPTIM="%{rpmcflags} -ffast-math"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_includedir}/argh,%{_libdir}}
 
-%{__make} install BINDIR=$RPM_BUILD_ROOT%{_bindir} \
+%{__make} install \
+	BINDIR=$RPM_BUILD_ROOT%{_bindir} \
 	LIBDIR=$RPM_BUILD_ROOT%{_libdir} \
 	INCDIR=$RPM_BUILD_ROOT%{_includedir}/argh
 
