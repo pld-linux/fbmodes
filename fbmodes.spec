@@ -2,7 +2,7 @@ Summary:	XFree86/SVGAlib/FrameBuffer mode lines generator
 Summary(pl):	Generator trybów graficznych dla XFree86/SVGAlib/FrameBuffer
 Name:		fbmodes
 Version:	1.2.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Base/Utilities
 Source0:	http://oktober.stc.cx/get/src/%{name}-%{version}.tar.bz2
@@ -58,7 +58,7 @@ Statyczna biblioteka argh.
 %setup  -q
 
 %build
-%{__make}
+%{__make} OPTIM="%{rpmcflags} -ffast-math"
 
 %install
 rm -rf $RPM_BUILD_ROOT
