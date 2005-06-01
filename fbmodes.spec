@@ -11,7 +11,7 @@ URL:		http://oktober.stc.cx/source/fbmodes.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
-Requires:	argh = %{version}
+Requires:	argh = %{version}-%{release}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,7 +37,7 @@ Biblioteka argh.
 Summary:	argh library devel files
 Summary(pl):	Pliki nag³ówkowe argh
 Group:		Development/Libraries
-Requires:	argh = %{version}
+Requires:	argh = %{version}-%{release}
 
 %description -n argh-devel
 Developement files for argh library.
@@ -49,7 +49,7 @@ Pliki potrzebne do pisania programów korzystaj±cych z argh.
 Summary:	Static argh library
 Summary(pl):	Statyczna biblioteka argh
 Group:		Development/Libraries
-Requires:	argh-devel = %{version}
+Requires:	argh-devel = %{version}-%{release}
 
 %description -n argh-static
 Static argh library.
@@ -58,7 +58,7 @@ Static argh library.
 Statyczna biblioteka argh.
 
 %prep
-%setup  -q
+%setup -q
 
 %build
 %{__make} \
