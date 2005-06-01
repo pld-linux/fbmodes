@@ -10,6 +10,7 @@ Source0:	http://oktober.stc.cx/get/src/%{name}-%{version}.tar.bz2
 URL:		http://oktober.stc.cx/source/fbmodes.html
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	libstdc++-devel
 Requires:	argh = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
