@@ -1,5 +1,5 @@
 Summary:	XFree86/SVGAlib/FrameBuffer mode lines generator
-Summary(pl):	Generator tryb體 graficznych dla XFree86/SVGAlib/FrameBuffer
+Summary(pl.UTF-8):   Generator tryb贸w graficznych dla XFree86/SVGAlib/FrameBuffer
 Name:		fbmodes
 Version:	1.2.2
 Release:	1
@@ -18,43 +18,43 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Modeline is a small utility to make XFree86/SVGAlib/FrameBuffer
 modelines.
 
-%description -l pl
-Modeline jest ma硑m narz阣ziem do generowania tryb體 graficznych dla
+%description -l pl.UTF-8
+Modeline jest ma艂ym narz臋dziem do generowania tryb贸w graficznych dla
 XFree86, SVGAlib oraz FrameBuffera.
 
 %package -n argh
 Summary:	argh library for fbmodes
-Summary(pl):	Biblioteka argh dla fbmodes
+Summary(pl.UTF-8):   Biblioteka argh dla fbmodes
 Group:		Libraries
 
 %description -n argh
 argh library.
 
-%description -n argh -l pl
+%description -n argh -l pl.UTF-8
 Biblioteka argh.
 
 %package -n argh-devel
 Summary:	argh library devel files
-Summary(pl):	Pliki nag丑wkowe argh
+Summary(pl.UTF-8):   Pliki nag艂贸wkowe argh
 Group:		Development/Libraries
 Requires:	argh = %{version}-%{release}
 
 %description -n argh-devel
 Developement files for argh library.
 
-%description -n argh-devel -l pl
-Pliki potrzebne do pisania program體 korzystaj眂ych z argh.
+%description -n argh-devel -l pl.UTF-8
+Pliki potrzebne do pisania program贸w korzystaj膮cych z argh.
 
 %package -n argh-static
 Summary:	Static argh library
-Summary(pl):	Statyczna biblioteka argh
+Summary(pl.UTF-8):   Statyczna biblioteka argh
 Group:		Development/Libraries
 Requires:	argh-devel = %{version}-%{release}
 
 %description -n argh-static
 Static argh library.
 
-%description -n argh-static -l pl
+%description -n argh-static -l pl.UTF-8
 Statyczna biblioteka argh.
 
 %prep
