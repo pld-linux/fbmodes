@@ -1,5 +1,5 @@
 Summary:	XFree86/SVGAlib/FrameBuffer mode lines generator
-Summary(pl.UTF-8):   Generator trybów graficznych dla XFree86/SVGAlib/FrameBuffer
+Summary(pl.UTF-8):	Generator trybów graficznych dla XFree86/SVGAlib/FrameBuffer
 Name:		fbmodes
 Version:	1.2.2
 Release:	1
@@ -24,7 +24,7 @@ XFree86, SVGAlib oraz FrameBuffera.
 
 %package -n argh
 Summary:	argh library for fbmodes
-Summary(pl.UTF-8):   Biblioteka argh dla fbmodes
+Summary(pl.UTF-8):	Biblioteka argh dla fbmodes
 Group:		Libraries
 
 %description -n argh
@@ -35,7 +35,7 @@ Biblioteka argh.
 
 %package -n argh-devel
 Summary:	argh library devel files
-Summary(pl.UTF-8):   Pliki nagłówkowe argh
+Summary(pl.UTF-8):	Pliki nagłówkowe argh
 Group:		Development/Libraries
 Requires:	argh = %{version}-%{release}
 
@@ -47,7 +47,7 @@ Pliki potrzebne do pisania programów korzystających z argh.
 
 %package -n argh-static
 Summary:	Static argh library
-Summary(pl.UTF-8):   Statyczna biblioteka argh
+Summary(pl.UTF-8):	Statyczna biblioteka argh
 Group:		Development/Libraries
 Requires:	argh-devel = %{version}-%{release}
 
